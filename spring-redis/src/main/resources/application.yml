@@ -1,0 +1,11 @@
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 3000
+    lettuce:
+      pool:
+        max-active: 30 # Max number of connections that can be allocated by the pool at a given time. Use a negative value for no limit.
+        max-idle: 10 # Max number of "idle" connections in the pool. Use a negative value to indicate an unlimited number of idle connections.
+        min-idle: 0 # Target for the minimum number of idle connections to maintain in the pool. This setting only has an effect if it is positive.
+    max-wait: 1000 # Maximum amount of time (in milliseconds) a connection allocation should block before throwing an exception when the pool is exhausted. Use a negative value to block indefinitely.
