@@ -1,3 +1,4 @@
 rootProject.name = 'spring-tutorial'
 include 'spring-redis'
+include 'spring-bean'
 
